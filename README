@@ -54,6 +54,14 @@ Location for all Mocha tests
   - /gulp
 Holds gulp tasks useful for a web server
 
+## Managing the server
+
+After you clone the basic package from this repository, you can start adding your own resources and services. Use gulp to maintain your tags and your versions
+
+    gulp patch|feature|release
+    
+The above will bump up your tag and add a commit message for package.json
+
 ## License
 
 [MIT](https://github.com/BobbyKostadinov/kickoff-koa-docker/blob/master/LICENSE)
