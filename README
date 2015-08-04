@@ -1,0 +1,50 @@
+## kickoff-koa-docker
+
+The purpose of this package is to provide a basic, test-ready KOA project within seconds. For those that want to expermiment wiht Docker and / or AWS Elastic Beanstalk I've added the needed configuration and Docker file to run this as a Docker image
+
+The Docker image creates an nginx server that forwards request to the node app
+
+## Install
+
+After cloning the repository run
+
+    npm install
+
+To start the koa server
+
+    npm start
+
+For more information on how to Run Docker: https://github.com/BobbyKostadinov/docker-nginx-node/blob/master/README.md
+
+## Bundle
+
+- Koa.js
+
+The KOA framework. This can be used for both APIs and web sites.
+
+- bunyan
+
+JSON logger, that supports KOA and allows requst logging though exposing request ID so entries can be tracked
+
+- gulp
+
+Task manager for applications
+
+- load-common-gulp-tasks
+
+Package that pre-loads some useful gulp tasks such as test, test-cover, watch and more
+
+## Folder structure
+
+ - /system
+This folder contains all the files needed to configure and run Docker image.
+ - /lib
+The default location of all services and resources. The only resource supplid with the sceleton application is _health that can be used for ping monitors
+ - /lib/**/test
+Location for all Mocha tests
+  - /gulp
+Holds gulp tasks useful for a web server
+
+## License
+
+[MIT](https://github.com/BobbyKostadinov/kickoff-koa-docker/blob/master/LICENSE)
