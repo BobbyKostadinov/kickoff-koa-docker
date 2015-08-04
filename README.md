@@ -4,6 +4,8 @@ The purpose of this package is to provide a basic, test-ready KOA project within
 
 The Docker image creates an nginx server that forwards request to the node app
 
+[![Build Status](https://travis-ci.org/BobbyKostadinov/kickoff-koa-docker.svg)](https://travis-ci.org/BobbyKostadinov/kickoff-koa-docker)
+
 ## Install
 
 After cloning the repository run
@@ -61,6 +63,8 @@ After you clone the basic package from this repository, you can start adding you
     gulp patch|feature|release
     
 The above will bump up your tag and add a commit message for package.json
+
+Edit the README so it fits your application
 
 ## License
 
